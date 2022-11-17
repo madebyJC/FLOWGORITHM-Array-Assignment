@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-14 07:07:56 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTExLTE0OzA2OjU2OjM4IHBtOzM0ODA="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTExLTE0OzA3OjA3OjU2IHBtOzE7MzU4NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="startCount, secondstartCount, numInput" type="Integer" array="False" size=""/>
+            <declare name="Numbers" type="Integer" array="True" size="10"/>
+            <assign variable="startCount" expression="0"/>
+            <output expression="&quot;Enter ten number values for the array&quot;" newline="True"/>
+            <while expression="startCount != 10">
+                <output expression="&quot;Enter the number value: &quot;" newline="True"/>
+                <input variable="numInput"/>
+                <assign variable="Numbers[startCount]" expression="numInput"/>
+                <assign variable="startCount" expression="startCount + 1"/>
+            </while>
+            <output expression="&quot;The given number values in the array are: &quot;" newline="True"/>
+            <assign variable="secondstartCount" expression="0"/>
+            <while expression="secondstartCount != 10">
+                <output expression="Numbers[secondstartCount]" newline="True"/>
+                <assign variable="secondstartCount" expression="secondstartCount + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
